@@ -1,7 +1,7 @@
 ## Test HMTL y CSS
 
 ## This is a solution to the challenge  Clipboard landing page – Frontend Mentor 
-[(https://www.figma.com/design/hw5hfbrYc2SDWhcBjZeVqV/Responsive-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=0-1&p=f&t=cGtDkgo8FHt4Z8E6-0)]
+
 
 ## Live Demo Pague
 [Ver sitio web  desplegado en  Netlify](https://pruebanexcent.netlify.app/)
