@@ -1,0 +1,170 @@
+
+:root
+/* Primary Colors */
+  /* Spacing */
+/* tipografia */
+
+
+
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+ line-height: 1.6;  
+}
+
+/* HEADER - FLEX */
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+}
+
+.nav {
+display: flex;
+gap: 20px;
+}
+
+.nav a {
+text-decoration: none;
+color: black;
+}
+
+.btn {
+padding: 8px 16px;
+background: green;
+color: white;
+border-radius: 0.75rem;
+}
+
+.btn:hover {
+  background: #720a43;    
+  transform: translateY(-4px);
+}
+
+/* HERO - GRID */
+.hero {
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 60px 40px;
+gap: 40px;
+align-items: center;
+}
+
+.hero-text h1 {
+margin-bottom: 20px;
+}
+
+.hero-text p {
+margin-bottom: 20px;
+}
+
+.img-box {
+
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* CLIENTES → FLEX */
+.clients {
+text-align: center;
+padding: 40px;
+}
+
+.client-logos {
+display: flex;
+justify-content: center;
+gap: 30px;
+margin-top: 20px;
+}
+
+.logo-box {
+width: 60px;
+height: 40px;
+background: #ccc;
+}
+
+/* SERVICIOS → GRID */
+.services {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+padding: 40px;
+}
+
+.card {
+background: #eee;
+padding: 20px;
+text-align: center;
+}
+.card:hover {
+  transform: translateY(-15px); /* La tarjeta se eleva */
+}
+
+/* INFO - GRID */
+.info {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+padding: 40px;
+align-items: center;
+}
+
+.tesla {
+display: grid;
+font-style: italic;
+grid-template-columns: 1fr 1fr;
+background-color:  rgb(211, 207, 207);
+gap: 40px;
+padding: 40px;
+border-top-right-radius: 100px;
+align-items: center;
+}
+
+/* FOOTER */
+.footer {
+height: auto;
+}
+
+.footer-grid {
+    display: grid;
+    background: rgb(15, 158, 46);
+    grid-template-columns: 1fr repeat(3, 1fr);
+    border-top-right-radius: 80px;
+    padding: 40px;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-column h4 { color: white; margin-bottom: 1rem; }
+.footer-column ul li { margin-bottom: 0.5rem; }
+.footer-column a { color: white; }
+.footer-column a:hover { text-decoration: underline; }
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.tesla,
+.hero,
+.info {
+grid-template-columns: 1fr;
+}
+
+.services {
+grid-template-columns: 1fr;
+}
+
+.header {
+flex-direction: column;
+gap: 15px;
+}
+}
